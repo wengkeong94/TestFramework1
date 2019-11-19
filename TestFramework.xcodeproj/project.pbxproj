@@ -10,6 +10,7 @@
 		F164684A2383CC6100FD86F8 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16468402383CC6100FD86F8 /* TestFramework.framework */; };
 		F164684F2383CC6100FD86F8 /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164684E2383CC6100FD86F8 /* TestFrameworkTests.swift */; };
 		F16468512383CC6100FD86F8 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F16468432383CC6100FD86F8 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F164687E2383CD8100FD86F8 /* MyFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164687D2383CD8100FD86F8 /* MyFramework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F16468492383CC6100FD86F8 /* TestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F164684E2383CC6100FD86F8 /* TestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrameworkTests.swift; sourceTree = "<group>"; };
 		F16468502383CC6100FD86F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F164687D2383CD8100FD86F8 /* MyFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFramework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				F16468432383CC6100FD86F8 /* TestFramework.h */,
 				F16468442383CC6100FD86F8 /* Info.plist */,
+				F164687D2383CD8100FD86F8 /* MyFramework.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					F164683F2383CC6100FD86F8 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					F16468482383CC6100FD86F8 = {
 						CreatedOnToolsVersion = 10.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F164687E2383CD8100FD86F8 /* MyFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		F16468552383CC6100FD86F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestSDK.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		F16468562383CC6100FD86F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		F16468582383CC6100FD86F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		F16468592383CC6100FD86F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
